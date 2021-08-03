@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Govind Ramesh</title>
+    <style>
+        .title a {
+            display: block;
+            font-size:40px;
+            padding: 10px 0px 0px 100px;
+	          background-color: grey;
+            color:black;
+            font-weight:bold;
+            text-align: left;
+            text-decoration: none;
+        }
+        .subtitle a {
+            display: block;
+            font-size:17px;
+	          padding: 0px 0px 10px 100px;
+            text-align: left;
+            text-decoration: none;
+        }
+        body {
+            background-color: grey;
+            margin: 0 auto;
+            background-position:center;
+            background-size: contain;
+        }
+
+        .menu {
+            position: sticky;
+            top: 0;
+            background-color: black;
+            padding:0px 0px 0px 84px;
+            color:white;
+            z-index: 100;
+        }
+        .menu a {
+            display:inline-block;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            display:inline-block;
+        }
+        .dropdown .dropbtn {
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 10px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .menu a:hover, .dropdown:hover .dropbtn {
+            background-color: #595959;
+        }
+        .dropdown-content {
+            display: none;
+            position:absolute;
+            background-color: black;
+            width: fit-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #909090;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block ;
+        }
+        footer {
+            width: 100%;
+            bottom: 0px;
+            background-color: black;
+            color: white;
+            position: fixed;
+	          padding:10px 0px 10px 0px;
+            text-align:center;
+            font-size:17px;
+            font-weight:bold;
+        }
+        .body_sec {
+            background-color: white;
+            margin-left:180px;
+            margin-right:180px;
+            padding-top:40px;
+            padding-right:20px;
+            padding-left:20px;
+            padding-bottom:60px;
+            font-size:17px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class = "title"><a href="https://govindramesh.github.io">Govind Ramesh</a></title>
+        <div class="subtitle"><a href="https://govindramesh.github.io">GitHub Page for Programming Projects</a></div>
+    </header>
+
+    <!-- Menu Navigation Bar -->
+    <div class="menu">
+        <a href="https://govindramesh.github.io">HOME</a>
+        <div class="dropdown">
+            <a class="dropbtn">PD-3DCNN</a>
+            <div class="dropdown-content">
+                <a target="_blank" rel="noopener noreferrer" href="Research Paper.pdf">Research Paper</a>
+                <a href="https://govindramesh.github.io/PD-3DCNN/">3D CNN Tutorial</a>
+            </div>
+        </div>
+        <a href="https://govindramesh.github.io/PoliceViolence/">Police Violence</a>
+        <a href="https://govindramesh.github.io/TrafficSim/">Traffic Simulation</a>
+    </div>
+
+    <!-- Body section -->
+    <div class = "body_sec">
+      <h1 style="line-height: 70%; font-size: 1.75em">An Analysis of the Efficiency of Michigan Left Turns Over Standard Left Turns</h1>
+      <p style="font-size:19px"><i>Basic Python implementation of mathematically modeled traffic patterns</i></p1>
+      <section id="Contents">
+           <p><br><span style="font-size:18px; font-weight:bold;">Sections:</span>
+           <br><a href="#sec1">Background</a>
+           <br><a href="#sec2">Rationale</a>
+           <br><a href="#sec3">Research Question</a>
+           <br><a href="#sec4">Methods</a>
+           <br><a href="#sec5">Python Code</a>
+           <br><a href="#sec6">Conclusions</a>
+           <br></p>
+      </section>
+      <hr>
+      <section style="padding-top:40px; margin-top:-50px;" id="sec1">
+          <h3>Background</h3>
+          <p><b>Michigan Left</b><br>A Michigan Left is a turn where instead of turning left, drivers must turn right and make a Uturn. Michigan Lefts reduce congestion, the amount of crashes, and waiting times for left-turning vehicles and through-traffic. In places where Michigan Lefts have been enforced, the amount of crashes have been reduced by 30 to 60 percent overall.
+          </p>
+          <p><b>Left Turns and Self-Driving Cars</b><br>Left turns are very complicated and involve making a lot of decisions. As a driver approaches an
+                intersection, they must take in information such as how much time there is to turn, how many cars are
+                in the opposite lane, how much space there is, and if there are any pedestrians crossing. At a traffic
+                pattern, there are either cars waiting to turn left, or cars in cross-traffic waiting for the cars that are
+                turning left, which creates congestion, wastes time and gas, and is dangerous to pedestrians, drivers,
+                and cross-traffic. The National Highway Institute Research Center reports that "nearly 75% of all
+                access-related crashes [to and from driveways from the main highway] are left turns", while data from
+                the National Highway Traffic Safety Administration shows that 53.1% of crossing-path crashes involve
+                left turns while only 5.7% include right turns. UPS routes its 110,000 vehicles to avoid left turns
+                whenever possible resulting in fewer accidents, less waiting time at intersections, and higher fuel
+                efficiency. <br><br> When programming self-driving cars, making a safe left turn is one of the toughest
+                problems. Depending on the traffic conditions, making a left turn can take a long time even for human
+                drivers, which creates less time and fuel efficiency. For driverless cars to make a left turn, the
+                technology and programming gets even more complex. However, making a right turn at an intersection
+                is simple even for self-driving cars. A 2010 USDOT study shows that 22.2% of all accidents are caused
+                by left turns, compared to 1.2% caused by right turns, so not only is it easier, it's much safer as well.
+                Human drivers can process everything at an intersection and respond accordingly, but driverless cars
+                don't know how to read signs from other drivers. Self-driving cars have many sensors that can
+                precisely measure the speed and distance of other cars/pedestrians, but they can’t reliably predict
+                what those cars/pedestrians are going to do next. They won’t try and go through traffic or pedestrians,
+                but instead, they will just stop creating potential traffic jams or other accidents. Right turns don’t involve
+                as much decision making as left turns do, and are much easier to execute for self-driving cars, which
+                opens up Michigan Lefts as a possibility in the era of autonomous cars.
+          </p>
+      </section>
+      <hr>
+      <section style="padding-top:40px; margin-top:-50px;" id="sec2">
+          <h3>Rationale</h3>
+          <p>As the idea of self-driving cars is slowly being brought to life, one of the most
+              challenging problems is the procedure the car will take at a traffic intersection.
+              Left turns are very complicated and involve making a lot of on-the-spot
+              decisions based on indicators in the surrounding area. Even human drivers
+              can sometimes have trouble processing all of the information and responding
+              accordingly. In some situations, making a left turn can take an unreasonable
+              amount of time, not only creating more traffic congestion, but also reducing
+              fuel efficiency. The technology for driverless cars to consistently make a safe
+              left turn is very complex and will take some time to perfect. On the other
+              hand, making a right turn at an intersection is simple and easy to execute even
+              for autonomous vehicles. Under which circumstances is a right turn then a U-turn (Michigan Left) more efficient than a standard left turn?
+            </p>
+      </section>
+      <hr>
+      <section style="padding-top:40px; margin-top:-50px;" id="sec3">
+          <h3>Research Question</h3>
+          <p>I am trying to determine under which conditions a "Michigan Left" is more efficient
+              than a standard left turn. In high-traffic situations, standard left turns can include a
+              lot of waiting times and high accident risk, so I think that a Michigan Left will be
+              better under these conditions because it is safer, more straightforward and
+              involves less waiting time. The result of this project could help determine when
+              and where Michigan Lefts should be utilized in the new era of self-driving cars.
+          </p>
+      </section>
+      <hr>
+      <section style="padding-top:40px; margin-top:-50px;" id="sec4">
+          <h3>Methods</h3>
+          <p><b>Data Analysis</b><br>In order to determine under which circumstances a Michigan Left is more efficient
+                than a standard left turn, my program assigns random(with set parameters)
+                numbers to each variable, from the number of cars in each lane to the duration of
+                the light cycle. This creates a very large amount of unique scenarios. My program
+                outputs which turn takes less time for each scenario, as well as some basic - but
+                vital - information about the scenario itself. This will help me analyze the data I
+                acquire from running the program multiple times in order to determine what factors
+                are the most influential in making a Michigan Left more efficient than a standard
+                left turn.
+          </p>
+          <p><b>Materials</b><br>I used Python to create a program that simulates a traffic pattern under
+                      many different conditions rather than testing at an actual intersection with
+                      real cars. My program automatically determines the times for each
+                      situation.
+          </p>
+          <p><b>Procedure</b></p>
+          <ul>
+            <li>Draw a traffic intersection and identify all variables that influence cars when making a standard left or Michigan Left.</li>
+            <li>Write out all of the necessary code in pseudocode including various functions and variables.</li>
+            <li>Translate the pseudocode to Python.</li>
+            <li>Run the program multiple times to get a wide variety of results.</li>
+            <li>Analyze the data.</li>
+          </ul>
+      </section>
+      <hr>
+      <section style="padding-top:40px; margin-top:-50px;" id="sec5">
+          <h3>Python Code</h3>
+          <p>Scroll through a simplified version of the traffic simulation implemented in Python.</p>
+          <embed style="display: block; margin-left: auto; margin-right: auto;" src="TrafficSim.py" width="800px" height="400px" />
+      </section>
+      <hr>
+      <section style="padding-top:40px; margin-top:-50px;" id="sec6">
+          <h3>Conclusions</h3>
+          <p>By analyzing the data I collected using my program, I found the correlation between
+              the different variables tested and whether a Michigan Left of Standard Left was better.
+              While I did have variables for most of the things that influence a turn at a traffic
+              intersection, I only used the most important variables to determine my conclusions.
+              The variables I used were the total amount of cars present, how long the light cycle
+              was, and which light was green when the tested car approached the intersection. I
+              found that Michigan Lefts took less time in somewhat high traffic. Standard Lefts were
+              exceedingly better when there were very few cars present, but fared worse in
+              extremely high traffic. Michigan Lefts performed better as the total amount of cars at
+              the intersection increased. When the light stayed green for a shorter amount of time,
+              Michigan Lefts were better, but there wasn’t too much variation when the time
+              increased. The biggest influence on whether a Michigan Left or Standard left was
+              better was which light was green when the car approached the intersection.
+            </p>
+      </section>
+      <hr>
+    </div>
+
+    <!-- Footer Section -->
+    <footer></footer>
+</body>
+</html>
